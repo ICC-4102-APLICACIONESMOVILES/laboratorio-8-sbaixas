@@ -8,6 +8,8 @@ import android.content.Context;
 @Database(entities = {Form.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract FormDao formDao();
+    public abstract QuestionDao questionDao();
+    public abstract AnswerDao answerDao();
 
     private static AppDatabase INSTANCE;
 
